@@ -3,7 +3,7 @@
     <div class="uk-section">
       <div class="uk-container uk-container-large">
         <h1>{{ $page.strapi.homepage.hero.title }}</h1>
-        <Articles :articles="$page.strapi.articles" />
+<!--        <Articles :articles="$page.strapi.articles" />-->
       </div>
     </div>
   </Layout>
