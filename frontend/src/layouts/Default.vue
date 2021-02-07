@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <Navbar />
     <slot />
   </div>
@@ -15,6 +15,7 @@ export default {
 </script>
 
 <style>
+
 a {
   text-decoration: none !important;
 }
@@ -48,7 +49,6 @@ h1 {
 }
 
 .uk-navbar-container {
-  background: #fff !important;
   font-family: Staatliches !important;
 }
 

@@ -1,11 +1,10 @@
 <template>
   <Layout>
-    <div class="uk-section">
-      <div class="uk-container uk-container-large">
-        <h1>{{ $page.strapi.homepage.hero.title }}</h1>
-<!--        <Articles :articles="$page.strapi.articles" />-->
-      </div>
+    <div class="letter-container">
+      <div class="letter letter_s" ref="letter_s">S</div>
+      <div class="letter letter_w" ref="letter_w">W</div>
     </div>
+    <!--        <Articles :articles="$page.strapi.articles" />-->
   </Layout>
 </template>
 
@@ -61,10 +60,41 @@ query {
 import Articles from "~/components/Articles";
 import { getMetaTags } from "~/utils/seo";
 import { getStrapiMedia } from "~/utils/medias";
+import anime from "animejs";
 
 export default {
   components: {
     Articles,
+  },
+  methods: {
+    translate(element, { rotate, tx, ty, duration, delay }) {
+      anime({
+        rotate,
+        targets: element,
+        translateX: tx,
+        translateY: ty,
+        duration: duration,
+        loop: true,
+        easing: "easeInOutSine",
+        delay,
+      });
+    },
+  },
+  mounted() {
+    this.translate(this.$refs.letter_s, {
+      rotate: [10, 10],
+      tx: "300vh",
+      ty: 100,
+      duration: 45000,
+      delay: 0,
+    });
+    this.translate(this.$refs.letter_w, {
+      tx: "-300vh",
+      ty: 100,
+      duration: 45000,
+      delay: 3000,
+      rotate: [10, 10],
+    });
   },
   metaInfo() {
     const { seo } = this.$page.strapi.homepage;

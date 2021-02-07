@@ -35,6 +35,11 @@
     </div>
   </div>
 </template>
+<style>
+.uk-navbar-container {
+  background: transparent !important;
+}
+</style>
 
 <static-query>
 query {

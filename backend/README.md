@@ -1,3 +1,3 @@
 # Strapi application
 
-A quick description of your strapi application
+docker run -it -p 1337:1337 -v `pwd`:/srv/app strapi/strapi
