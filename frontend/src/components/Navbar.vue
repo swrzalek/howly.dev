@@ -1,43 +1,28 @@
 <template>
-  <div>
-    <div>
-      <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li>
-              <g-link to="/">{{ $static.strapi.global.siteName }}</g-link>
-            </li>
-          </ul>
-        </div>
-        <div class="uk-navbar-right">
-          <button
-            class="uk-button uk-button-default uk-margin-right"
-            type="button"
-          >
-            Categories
-          </button>
-          <div
-            uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000"
-          >
-            <ul class="uk-nav uk-dropdown-nav">
-              <li
-                v-for="category in $static.strapi.categories"
-                :key="category.id"
-              >
-                <g-link :to="'/category/' + category.slug">{{
-                  category.name
-                }}</g-link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+  <div class="menu">
+    <span class="menu_item text-smooth bold noselect">Sebastian Wrzalek</span>
+    <g-link to="/" class="menu_item text-smooth">Snippets</g-link>
+    <g-link to="/" class="menu_item text-smooth">About</g-link>
   </div>
 </template>
-<style>
-.uk-navbar-container {
-  background: transparent !important;
+<style lang="scss">
+.menu {
+  padding: 1em;
+  position: absolute;
+  z-index: 10;
+  &_item {
+    display: block;
+    color: #333333;
+    font-weight: 500;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Roboto", sans-serif;
+    &:hover {
+      color: #333333;
+      letter-spacing: 20px;
+    }
+  }
 }
 </style>
 

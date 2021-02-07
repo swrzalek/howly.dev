@@ -1,8 +1,8 @@
 <template>
   <Layout>
     <div class="letter-container">
-      <div class="letter letter_s" ref="letter_s">S</div>
-      <div class="letter letter_w" ref="letter_w">W</div>
+      <div class="letter letter_s noselect text-smooth" ref="letter_s">S</div>
+      <div class="letter letter_w noselect text-smooth" ref="letter_w">W</div>
     </div>
     <!--        <Articles :articles="$page.strapi.articles" />-->
   </Layout>

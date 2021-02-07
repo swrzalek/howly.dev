@@ -6,15 +6,13 @@
 .letter-container {
   overflow: hidden;
   position: relative;
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
 .letter {
   position: absolute;
   width: 200px;
   transform: rotate(20deg);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
   font-size: 30em;
   font-weight: 900;
@@ -31,4 +29,23 @@
     right: -40%;
     top: -10%
   }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.text-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bold {
+  font-weight: 900 !important;
 }
