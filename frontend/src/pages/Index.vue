@@ -4,7 +4,6 @@
       <div class="letter letter_s noselect text-smooth" ref="letter_s">S</div>
       <div class="letter letter_w noselect text-smooth" ref="letter_w">W</div>
     </div>
-    <!--        <Articles :articles="$page.strapi.articles" />-->
   </Layout>
 </template>
 
@@ -57,15 +56,11 @@ query {
 </page-query>
 
 <script>
-import Articles from "~/components/Articles";
 import { getMetaTags } from "~/utils/seo";
 import { getStrapiMedia } from "~/utils/medias";
 import anime from "animejs";
 
 export default {
-  components: {
-    Articles,
-  },
   methods: {
     translate(element, { rotate, tx, ty, duration, delay }) {
       anime({

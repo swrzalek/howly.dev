@@ -25,11 +25,6 @@ h1 {
   font-size: 120px !important;
 }
 
-#category {
-  font-family: Staatliches !important;
-  font-weight: 500 !important;
-}
-
 #title {
   letter-spacing: 0.4px !important;
   font-size: 22px !important;
