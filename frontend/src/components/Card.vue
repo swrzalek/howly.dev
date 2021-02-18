@@ -46,7 +46,6 @@ export default {
 </script>
 <style scooped lang="scss">
 .card {
-  border-radius: 10px;
   box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
   &-media-top {
     .g-image {
@@ -55,6 +54,8 @@ export default {
   }
   &-body {
     padding: 1em;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
   }
 }
 </style>

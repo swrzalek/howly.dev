@@ -1,9 +1,12 @@
 <template>
   <div :style="{ padding: '1.5em' }">
     <div class="container justify-content-center">
-      <SearchInput class="my-2"/>
+      <SearchInput class="my-2" />
     </div>
-    <Articles :articles="$page.strapi.articles" />
+    <Articles
+      :style="{ marginTop: '170px' }"
+      :articles="$page.strapi.articles"
+    />
   </div>
 </template>
 
