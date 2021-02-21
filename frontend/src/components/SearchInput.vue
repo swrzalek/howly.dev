@@ -106,12 +106,12 @@ export default {
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 90%;
   background: #f6f6f6;
   min-height: 75px;
   border-radius: 10px;
-  @include sm {
-    width: 100%;
+  @include md {
+    width: 35%;
   }
 }
 .input {

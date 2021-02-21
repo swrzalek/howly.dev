@@ -1742,6 +1742,11 @@ async@^2.6.2:
   dependencies:
     lodash "^4.17.14"
 
+async@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.0.tgz#b3a2685c5ebb641d3de02d161002c60fc9f85720"
+  integrity sha512-TR2mEZFVOj2pLStYxLht7TyfuRzaydfpxr3k9RpHIzMgw7A64dzsdqCxH1WJyQdoe8T10nDXd9wnEigmiuHIZw==
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -2349,7 +2354,7 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0:
+chalk@^4.0.0, chalk@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
   integrity sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
@@ -4611,6 +4616,13 @@ graphql@^14.4.2:
   dependencies:
     iterall "^1.2.2"
 
+gridsome-plugin-sass-resources-loader@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-sass-resources-loader/-/gridsome-plugin-sass-resources-loader-0.0.3.tgz#e95400c02a12b9927a7cba3bbfe3a83150c733ed"
+  integrity sha512-Zt5lHJZQy4Z3KVvcJuExhO3aGadYbhn8yftWGTd/+5uXaYaLm5JC+KihumBlleyDX+/4hWYfE/QWeJNIbhxgyw==
+  dependencies:
+    sass-resources-loader "^2.0.0"
+
 gridsome@^0.7.0:
   version "0.7.20"
   resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.20.tgz#6b45135468db1185e5aea4b3e699d2c2d1e3557d"
@@ -5787,6 +5799,15 @@ loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^1.0.1"
+
+loader-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
+  integrity sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^2.1.2"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -8109,6 +8130,16 @@ sass-loader@7.3.1:
     neo-async "^2.5.0"
     pify "^4.0.1"
     semver "^6.3.0"
+
+sass-resources-loader@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/sass-resources-loader/-/sass-resources-loader-2.1.1.tgz#a231b7c4e326d9c8d141909c901233bef9453151"
+  integrity sha512-/KrD5mEBTj3ZQ49thKSThhpv1OFhc82JbWA0bmv9yANRuPIlQrydNpZG82jdy4pEWY0QcQTGyd5OmCb3xVeZsw==
+  dependencies:
+    async "^3.2.0"
+    chalk "^4.1.0"
+    glob "^7.1.6"
+    loader-utils "^2.0.0"
 
 sax@~1.2.4:
   version "1.2.4"

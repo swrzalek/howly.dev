@@ -3,6 +3,7 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const resolve = require("path").resolve;
 
 module.exports = {
   siteName: "Strapi Gridsome Blog",
@@ -16,6 +17,13 @@ module.exports = {
           "/graphql",
         fieldName: "strapi",
         typeName: "strapiTypes",
+      },
+    },
+    {
+      use: "gridsome-plugin-sass-resources-loader",
+      options: {
+        // provide path to the file with resources
+        resources: resolve(__dirname, "./src/assets/*.scss"),
       },
     },
   ],
