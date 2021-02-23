@@ -3,7 +3,7 @@
     <g-link to="/snippets" class="menu_item menu_item__snippets text-smooth"
       >Snippets</g-link
     >
-    <g-link to="/" class="menu_item menu_item__about text-smooth">About</g-link>
+    <g-link to="/about" class="menu_item menu_item__about text-smooth">About</g-link>
     <g-link to="/" class="menu_item menu_item__what text-smooth">What?</g-link>
   </div>
 </template>
