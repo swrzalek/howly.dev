@@ -3,7 +3,10 @@
     <div class="about_title">Sebastian Wrzałek</div>
     <div class="about_media">
       <g-image src="~/assets/icons/github.svg" @click="newTab(urls.github)" />
-      <g-image src="~/assets/icons/linkedin.svg" @click="newTab(urls.linkedin)" />
+      <g-image
+        src="~/assets/icons/linkedin.svg"
+        @click="newTab(urls.linkedin)"
+      />
       <g-image src="~/assets/icons/send.svg" @click="newTab(urls.send)" />
     </div>
   </div>
@@ -17,7 +20,8 @@ export default {
       urls: {
         github: "https://github.com/swrzalek",
         linkedin: "https://github.com/swrzalek",
-        send: "https://mail.google.com/mail/?view=cm&fs=1&to=s.wrzalek@gmail.com&su=Hello&body=Do+you+want+to+work+for+us?",
+        send:
+          "https://mail.google.com/mail/?view=cm&fs=1&to=s.wrzalek@gmail.com&su=Hello&body=Do+you+want+to+work+for+us?",
       },
     };
   },
