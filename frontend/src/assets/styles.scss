@@ -13,10 +13,11 @@ SVG Icons - svgicons.sparkk.fr
 .app {
   height: 100vh;
 }
-html {
+body {
   background: #e0e5eb;
-  height: 100vh !important;
+  min-height: 100vh !important;
 }
+
 .letter-container {
   overflow: hidden;
   position: relative;
