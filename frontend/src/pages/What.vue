@@ -20,7 +20,7 @@ export default {
       const height = window.innerHeight;
 
       const svg = d3.select("svg").attr("width", width).attr("height", height);
-
+      const color = d3.scaleOrdinal(d3.schemeCategory10);
       this.simulation = d3
         .forceSimulation()
         .force(
@@ -61,6 +61,7 @@ export default {
         .enter()
         .append("circle")
         .attr("r", 5)
+        .attr("fill", function(d) { return color(d.group); })
         .call(
           d3
             .drag()
@@ -102,7 +103,6 @@ export default {
 
         node
           .attr("r", 5)
-          .style("fill", "#555")
           .style("stroke", "#fff")
           .style("stroke-width", "3px")
           .attr("cx", function (d) {
