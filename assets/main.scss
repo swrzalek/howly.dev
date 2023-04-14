@@ -1,0 +1,32 @@
+@font-face {
+   font-family: "CarmenSans";
+   src: url("assets/fonts/CarmenSans-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+}
+
+:root {
+   --spacing-unit: 10px;
+   --margin: calc(0.2 * var(--spacing-unit));
+   --padding: calc(0.2 * var(--spacing-unit));
+   --margin-sm: var(--margin);
+   --margin-md: calc(2 * var(--margin));
+   --margin-lg: calc(4 * var(--margin));
+   --margin-xl: calc(8 * var(--margin));
+   --margin-xxl: calc(12 * var(--margin));
+}
+
+body {
+   margin: 0;
+   font-family: 'CarmenSans', sans-serif;
+}
+
+a {
+   text-decoration: none;
+   color: $secondary
+}
+
+h1 {
+   font-size: 5.5em;
+   letter-spacing: 5px;
+}
