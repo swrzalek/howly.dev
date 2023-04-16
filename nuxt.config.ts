@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    target: 'static',
+    nitro: {
+        preset: 'node-server'
+    },
+    ssr: true,
     css: ["@/assets/main.scss"],
     vite: {
         css: {
