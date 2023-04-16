@@ -2,7 +2,7 @@
   <div class="container">
     <div class="heading">
       <h1>howly</h1>
-      <img src="logo.png" alt="Howly Logo" class="logo">
+      <img src="/img/logo.png" alt="Howly Logo" class="logo">
     </div>
     <div class="links">
       <a href="https://medium.com/@s.wrzalek">blog</a>
