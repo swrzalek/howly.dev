@@ -4,14 +4,31 @@ on:
   push:
     branches:
     - main
-
+    
 jobs:
   deploy:
+    # Operating system to run job on
     runs-on: ubuntu-latest
-    name: 'Deploy to Netlify'
+
+    # Steps in job
     steps:
-      - uses: jsmrcaga/action-netlify-deploy@v2.0.0
+      # Get code from repo
+      - name: Checkout code
+        uses: actions/checkout@v1
+      # Install NodeJS
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
         with:
+          node-version: 16.10.0
+      # Run npm install and build on our code
+      - run: npm install
+      - run: npm run build --if-present
+      # Deploy to Netlify using our dev secrets
+      - name: Deploy to netlify
+        uses: netlify/actions/cli@master
+        env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
-          NETLIFY_DEPLOY_TO_PROD: true
           NETLIFY_SITE_ID: 109d6b71-a086-4d14-ab3b-2dde34e30386
+        with:
+          args: deploy --dir=build --prod
+          secrets: '["DEV_NETLIFY_AUTH_TOKEN"]'
