@@ -22,7 +22,7 @@ jobs:
           node-version: 16.10.0
       # Run npm install and build on our code
       - run: npm install
-      - run: npm run build --if-present
+      - run: npm run generate --if-present
       # Deploy to Netlify using our dev secrets
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
@@ -30,5 +30,5 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
           NETLIFY_SITE_ID: 109d6b71-a086-4d14-ab3b-2dde34e30386
         with:
-          args: deploy --dir=build --prod
+          args: deploy --dir=dist --prod
           secrets: '["DEV_NETLIFY_AUTH_TOKEN"]'
