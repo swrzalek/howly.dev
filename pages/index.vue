@@ -5,7 +5,7 @@
       <img src="/img/logo.png" alt="Howly Logo" class="logo">
     </div>
     <div class="links">
-      <a href="https://medium.com/@s.wrzalek">blog</a>
+      <a href="https://dev.to/swrzalek">blog</a>
       <a href="/contact">contact</a>
     </div>
   </div>
