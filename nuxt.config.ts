@@ -4,12 +4,11 @@ export default defineNuxtConfig({
         preset: 'netlify'
     },
     ssr: true,
-    css: ["@/assets/main.scss"],
     vite: {
         css: {
             preprocessorOptions: {
                 scss: {
-                    additionalData: '@use "@/assets/_colors.scss" as *;'
+                    additionalData: '@use "@/assets/main.scss" as *;'
                 }
             }
         }
