@@ -1,3 +1,5 @@
+@import "breakpoints", "colors", "mixins";
+
 @font-face {
    font-family: "CarmenSans";
    src: url("assets/fonts/CarmenSans-Regular.woff2") format("woff2");
@@ -27,6 +29,13 @@ a {
 }
 
 h1 {
-   font-size: 5.5em;
    letter-spacing: 5px;
+   font-size: 3.5em;
+   margin: var(--margin-md) 0;
+
+   @include sm {
+      font-size: 5.5em;
+      margin: var(--margin-lg) 0;
+   }
+
 }
