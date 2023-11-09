@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-const links = [ 
+const links = [
   {
     name: "LinkedIn",
     url: "https://linkedin.com/in/sebastian-wrzalek/"
@@ -21,7 +21,7 @@ const links = [
   }
 ]
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 h3 {
   margin: var(--margin-lg) 0;
 }
